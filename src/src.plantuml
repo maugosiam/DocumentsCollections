@@ -13,6 +13,10 @@ title __SRC's Class Diagram__\n
         + createPdfDoc()
         + createPictureDoc()
         + createVideoDoc()
+        + getFirstName()
+        + getLastName()
+        + getId()
+        + getAddress()
         + modifyFile()
         + deleteFile()
     }
@@ -32,6 +36,9 @@ title __SRC's Class Diagram__\n
         - fileSize : double
         - docName : String
         + Documents()
+        + getDescription()
+        + getFileSize()
+        + getDocName()
         + isFileSizeTooBig()
     }
   }
