@@ -27,9 +27,9 @@ public class Program {
         };
 
         Documents[] documents = {
-                author[0].createWordDoc("Dokument Word", "Description of Word Document", 100),
-                author[1].createPictureDoc("Picture document", "Description of Picrure document", 700, 600, 900),
-                author[2].createVideoDoc("Video document", "Description of Video document", 900, 80000, 900, 60)
+                author[0].createWordDoc("tra la la la.doc", "Description of Word Document", 100),
+                author[1].createPictureDoc("picture of the elephant.jpg", "Description of Picrure document", 700, 600, 900),
+                author[2].createVideoDoc("scary movie.mp4", "Description of Video document", 900, 80000, 900, 60)
 
         };
 
