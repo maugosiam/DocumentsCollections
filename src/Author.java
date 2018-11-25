@@ -1,6 +1,5 @@
 public class Author {
 
-
     private String firstName;
     private String lastName;
     private int id;
@@ -34,22 +33,4 @@ public class Author {
     public String getLastName() {
         return lastName;
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void modifyFile(){
-
-    }
-    public void deleteFile(){
-
-    }
-
-
-
 }
