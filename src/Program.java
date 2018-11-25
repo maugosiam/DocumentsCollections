@@ -21,19 +21,22 @@ public class Program {
     public static void main (String[] args){
 
         Author author[] = {
-                new ReadOnly("A", "B", 1, "ADDRAB"),
-                new CanModify("C", "D", 2, "ADDRCD"),
-                new FullRights("E", "F", 3, "ADDREF"),
+                new ReadOnly("A", "Badowski", 1, "ADDRAB"),
+                new CanModify("C", "Duda", 2, "ADDRCD"),
+                new FullRights("E", "Fijałkiewicz", 3, "ADDREF"),
         };
 
-        author[0].createWordDoc("Dokument Word", "Description of Word Document", 100);
-        author[1].createPictureDoc("Picture document", "Description of Picrure document", 700, 600, 900);
-        author[2].createVideoDoc("Video document", "Description of Video document", 900, 80000, 900, 60);
+        Documents[] documents = {
+                author[0].createWordDoc("Dokument Word", "Description of Word Document", 100),
+                author[1].createPictureDoc("Picture document", "Description of Picrure document", 700, 600, 900),
+                author[2].createVideoDoc("Video document", "Description of Video document", 900, 80000, 900, 60)
 
-        for (Author i:author){
-            System.out.println(author[0].);
+        };
 
-        }
+        System.out.println(author[0].getLastName()+" created file: "+documents[0].getDocName());
+        System.out.println(author[1].getLastName()+" created file: "+documents[1].getDocName());
+        System.out.println(author[2].getLastName()+" created file: "+documents[2].getDocName());
+
 
 
 

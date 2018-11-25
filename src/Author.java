@@ -13,18 +13,18 @@ public class Author {
         this.address = address;
     }
 
-    public void createWordDoc(String docName, String description, double fileSize){
-        new WordDoc(docName, description, fileSize);
+    public WordDoc createWordDoc(String docName, String description, double fileSize){
+        return new WordDoc(docName, description, fileSize);
     }
-    public void createPdfDoc(String docName, String description, double fileSize){
-        new PdfDoc(docName, description, fileSize);
+    public PdfDoc createPdfDoc(String docName, String description, double fileSize){
+        return new PdfDoc(docName, description, fileSize);
     }
 
-    public void createPictureDoc(String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth){
-        new PictureDoc(docName, description, fileSize, imageDimesionHeight, imageDimesionHeight);
+    public PictureDoc createPictureDoc(String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth){
+        return new PictureDoc(docName, description, fileSize, imageDimesionHeight, imageDimesionHeight);
     }
-    public void createVideoDoc(String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth, double videoDuration){
-        new VideoDoc(docName, description, fileSize, imageDimesionHeight, imageDimensionWidth, videoDuration);
+    public VideoDoc createVideoDoc(String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth, double videoDuration){
+        return new VideoDoc(docName, description, fileSize, imageDimesionHeight, imageDimensionWidth, videoDuration);
     }
 
     public String getFirstName() {
