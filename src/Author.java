@@ -21,7 +21,7 @@ public class Author {
     }
 
     public PictureDoc createPictureDoc(String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth){
-        return new PictureDoc(docName, description, fileSize, imageDimesionHeight, imageDimesionHeight);
+        return new PictureDoc(docName, description, fileSize, imageDimesionHeight, imageDimensionWidth);
     }
     public VideoDoc createVideoDoc(String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth, double videoDuration){
         return new VideoDoc(docName, description, fileSize, imageDimesionHeight, imageDimensionWidth, videoDuration);
