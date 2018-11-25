@@ -30,7 +30,6 @@ public class Program {
                 author[0].createWordDoc("tra la la la.doc", "Description of Word Document", 100),
                 author[1].createPictureDoc("picture of the elephant.jpg", "Description of Picrure document", 700, 600, 900),
                 author[2].createVideoDoc("scary movie.mp4", "Description of Video document", 900, 80000, 900, 60)
-
         };
 
         System.out.println(author[0].getLastName()+" created file: "+documents[0].getDocName());
@@ -38,11 +37,5 @@ public class Program {
         System.out.println(author[2].getLastName()+" created file: "+documents[2].getDocName());
 
 
-
-
-
-
-
     }
-
 }
