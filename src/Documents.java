@@ -26,6 +26,18 @@ public abstract class Documents {
         this.fileSize = fileSize;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public double getFileSize() {
+        return fileSize;
+    }
+
+    public String getDocName() {
+        return docName;
+    }
+
     public boolean isFileSizeTooBig(){
         return fileSize>10;
     }

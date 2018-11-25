@@ -27,8 +27,21 @@ public class Author {
         new VideoDoc(docName, description, fileSize, imageDimesionHeight, imageDimensionWidth, videoDuration);
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public String getLastName() {
+        return lastName;
+    }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getAddress() {
+        return address;
+    }
 
     public void modifyFile(){
 

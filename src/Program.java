@@ -31,6 +31,7 @@ public class Program {
         author[2].createVideoDoc("Video document", "Description of Video document", 900, 80000, 900, 60);
 
         for (Author i:author){
+            System.out.println(author[0].);
 
         }
 
