@@ -1,4 +1,4 @@
-public class MediaDoc extends Documents {
+public class MediaDoc extends Documents implements TestInteface {
 
     private double imageDimensionHeight;
     private double imageDimensionWidth;
@@ -7,5 +7,10 @@ public class MediaDoc extends Documents {
         super(docName, description, fileSize);
         this.imageDimensionHeight = imageDimensionHeight;
         this.imageDimensionWidth = imageDimensionWidth;
+    }
+
+    @Override
+    public void druk(){
+        System.out.println("Test działania interface'u in MediaDoc");
     }
 }

@@ -14,7 +14,7 @@ Imagine you're writing a Content Management system - this system will store four
         You have to implement these function and build UML diagram for the structure. Try to use abstraction as well))
 */
 
-public abstract class Documents {
+public abstract class Documents{
 
     private  String description;
     private  double fileSize;

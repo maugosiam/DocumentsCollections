@@ -25,12 +25,14 @@ public class Program {
 
         Documents[] documents = {
                 author[0].createWordDoc("tra la la la.doc", "Description of Word Document", 100),
-                author[1].createPictureDoc("picture of the elephant.jpg", "Description of Picrure document", 700, 600, 900),
+                author[1].createPictureDoc("picture of the elephant.jpg", "Description of Picture document", 700, 600, 900),
                 author[2].createVideoDoc("scary movie.mp4", "Description of Video document", 900, 80000, 900, 60)
         };
 
         System.out.println(author[0].getLastName()+" created file: "+documents[0].getDocName()+" having hashcode: "+documents[0].hashCode());
         System.out.println(author[1].getLastName()+" created file: "+documents[1].getDocName()+" having hashcode: "+documents[1].hashCode());
         System.out.println(author[2].getLastName()+" created file: "+documents[2].getDocName()+" having hashcode: "+documents[2].hashCode());
+
+     //documents[0].druk();
     }
 }
