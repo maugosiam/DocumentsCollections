@@ -29,10 +29,12 @@ public class Program {
                 author[2].createVideoDoc("scary movie.mp4", "Description of Video document", 900, 80000, 900, 60)
         };
 
+        ((WordDoc) documents[0]).druk();
+
         System.out.println(author[0].getLastName()+" created file: "+documents[0].getDocName()+" having hashcode: "+documents[0].hashCode());
         System.out.println(author[1].getLastName()+" created file: "+documents[1].getDocName()+" having hashcode: "+documents[1].hashCode());
         System.out.println(author[2].getLastName()+" created file: "+documents[2].getDocName()+" having hashcode: "+documents[2].hashCode());
 
-     //documents[0].druk();
+        ((WordDoc) documents[0]).druk();
     }
 }
