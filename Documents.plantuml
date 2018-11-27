@@ -57,6 +57,12 @@ title __DOCUMENTS's Class Diagram__\n
   
 
   package  {
+    interface TestInteface {
+    }
+  }
+  
+
+  package  {
     class TextDoc {
     }
   }
@@ -76,12 +82,14 @@ title __DOCUMENTS's Class Diagram__\n
 
   CanModify -up-|> ReadOnly
   FullRights -up-|> CanModify
+  MediaDoc -up-|> TestInteface
   MediaDoc -up-|> Documents
   PdfDoc -up-|> TextDoc
   PictureDoc -up-|> MediaDoc
   ReadOnly -up-|> Author
   TextDoc -up-|> Documents
   VideoDoc -up-|> MediaDoc
+  WordDoc -up-|> TestInteface
   WordDoc -up-|> TextDoc
 
 

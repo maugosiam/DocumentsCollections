@@ -15,10 +15,6 @@ title __SRC's Class Diagram__\n
         + createVideoDoc()
         + getFirstName()
         + getLastName()
-        + getId()
-        + getAddress()
-        + modifyFile()
-        + deleteFile()
     }
   }
   
@@ -56,6 +52,7 @@ title __SRC's Class Diagram__\n
         - imageDimensionHeight : double
         - imageDimensionWidth : double
         + MediaDoc()
+        + druk()
     }
   }
   
@@ -89,6 +86,13 @@ title __SRC's Class Diagram__\n
   
 
   package  {
+    interface TestInteface {
+        {abstract} + druk()
+    }
+  }
+  
+
+  package  {
     class TextDoc {
         + TextDoc()
     }
@@ -106,18 +110,21 @@ title __SRC's Class Diagram__\n
   package  {
     class WordDoc {
         + WordDoc()
+        + druk()
     }
   }
   
 
   CanModify -up-|> ReadOnly
   FullRights -up-|> CanModify
+  MediaDoc -up-|> TestInteface
   MediaDoc -up-|> Documents
   PdfDoc -up-|> TextDoc
   PictureDoc -up-|> MediaDoc
   ReadOnly -up-|> Author
   TextDoc -up-|> Documents
   VideoDoc -up-|> MediaDoc
+  WordDoc -up-|> TestInteface
   WordDoc -up-|> TextDoc
 
 
