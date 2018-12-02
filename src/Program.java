@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /*
 Imagine you're writing a Content Management system - this system will store four types of documents (and the Meta/Index information for them)
 
@@ -17,23 +19,26 @@ public class Program {
 
     public static void main (String[] args){
 
-        Author author[] = {
-                new ReadOnly("A", "Badowski", 1, "ADDRAB"),
-                new CanModify("C", "Duda", 2, "ADDRCD"),
-                new FullRights("E", "Fijałkiewicz", 3, "ADDREF"),
-        };
+        ArrayList<Author> authors = new ArrayList();
+        authors.add(new ReadOnly("Adam", "Badowski", 1, "ul.Sezamkowa 14, Warszawa"));
+        authors.add(new CanModify("Cezary", "Duda", 2, "266 Broadway Str, New York"));
+        authors.add(new FullRights("Edyta", "Fijałkiewicz", 3, "ul.Kraciasta 23/5, Słupsk"));
+
+        for (int i = 0; i<authors.size();i++) {
+            System.out.println("ELEMENT"+i+": "+authors.get(i));
+        }
 
         Documents[] documents = {
-                author[0].createWordDoc("tra la la la.doc", "Description of Word Document", 100),
-                author[1].createPictureDoc("picture of the elephant.jpg", "Description of Picture document", 700, 600, 900),
-                author[2].createVideoDoc("scary movie.mp4", "Description of Video document", 900, 80000, 900, 60)
+                authors.get(0).createWordDoc("tra la la la.doc", "Description of Word Document", 100),
+                authors.get(1).createPictureDoc("picture of the elephant.jpg", "Description of Picture document", 700, 600, 900),
+                authors.get(2).createVideoDoc("scary movie.mp4", "Description of Video document", 900, 80000, 900, 60)
         };
 
         ((WordDoc) documents[0]).druk();
 
-        System.out.println(author[0].getLastName()+" created file: "+documents[0].getDocName()+" having hashcode: "+documents[0].hashCode());
-        System.out.println(author[1].getLastName()+" created file: "+documents[1].getDocName()+" having hashcode: "+documents[1].hashCode());
-        System.out.println(author[2].getLastName()+" created file: "+documents[2].getDocName()+" having hashcode: "+documents[2].hashCode());
+        System.out.println(authors.get(0).getLastName()+" created file: "+documents[0].getDocName()+" having hashcode: "+documents[0].hashCode());
+        System.out.println(authors.get(1).getLastName()+" created file: "+documents[1].getDocName()+" having hashcode: "+documents[1].hashCode());
+        System.out.println(authors.get(2).getLastName()+" created file: "+documents[2].getDocName()+" having hashcode: "+documents[2].hashCode());
 
         ((WordDoc) documents[0]).druk();
     }
