@@ -3,8 +3,8 @@ public class MediaDoc extends Documents implements TestInteface {
     private double imageDimensionHeight;
     private double imageDimensionWidth;
 
-    public MediaDoc(String docName, String description, double fileSize, double imageDimensionHeight, double imageDimensionWidth) {
-        super(docName, description, fileSize);
+    public MediaDoc(Author author, String docName, String description, double fileSize, double imageDimensionHeight, double imageDimensionWidth) {
+        super(author, docName, description, fileSize);
         this.imageDimensionHeight = imageDimensionHeight;
         this.imageDimensionWidth = imageDimensionWidth;
     }

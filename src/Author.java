@@ -12,18 +12,18 @@ public class Author {
         this.address = address;
     }
 
-    public WordDoc createWordDoc(String docName, String description, double fileSize){
-        return new WordDoc(docName, description, fileSize);
+    public WordDoc createWordDoc(Author author, String docName, String description, double fileSize){
+        return new WordDoc(author, docName, description, fileSize);
     }
-    public PdfDoc createPdfDoc(String docName, String description, double fileSize){
-        return new PdfDoc(docName, description, fileSize);
+    public PdfDoc createPdfDoc(Author author, String docName, String description, double fileSize){
+        return new PdfDoc(author, docName, description, fileSize);
     }
 
-    public PictureDoc createPictureDoc(String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth){
-        return new PictureDoc(docName, description, fileSize, imageDimesionHeight, imageDimensionWidth);
+    public PictureDoc createPictureDoc(Author author, String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth){
+        return new PictureDoc(author, docName, description, fileSize, imageDimesionHeight, imageDimensionWidth);
     }
-    public VideoDoc createVideoDoc(String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth, double videoDuration){
-        return new VideoDoc(docName, description, fileSize, imageDimesionHeight, imageDimensionWidth, videoDuration);
+    public VideoDoc createVideoDoc(Author author, String docName, String description, double fileSize, double imageDimesionHeight, double imageDimensionWidth, double videoDuration){
+        return new VideoDoc(author, docName, description, fileSize, imageDimesionHeight, imageDimensionWidth, videoDuration);
     }
 
     public String getFirstName() {

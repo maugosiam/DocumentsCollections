@@ -1,7 +1,7 @@
 public class WordDoc extends TextDoc implements TestInteface{
 
-    public WordDoc(String docName, String description, double fileSize) {
-        super(docName, description, fileSize);
+    public WordDoc(Author author, String docName, String description, double fileSize) {
+        super(author, docName, description, fileSize);
     }
 
     @Override

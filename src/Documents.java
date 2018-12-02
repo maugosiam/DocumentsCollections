@@ -19,8 +19,10 @@ public abstract class Documents{
     private  String description;
     private  double fileSize;
     private String docName;
+    Author author;
 
-    public Documents(String docName, String description, double fileSize) {
+    public Documents( Author author, String docName, String description, double fileSize) {
+        this.author = author;
         this.docName = docName;
         this.description = description;
         this.fileSize = fileSize;

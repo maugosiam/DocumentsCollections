@@ -1,7 +1,7 @@
 public class TextDoc extends Documents {
 
-    public TextDoc(String docName, String description, double fileSize) {
-        super(docName, description, fileSize);
+    public TextDoc(Author author, String docName, String description, double fileSize) {
+        super(author, docName, description, fileSize);
     }
 
 

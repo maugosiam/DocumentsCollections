@@ -1,124 +1,87 @@
 @startuml
 
-title __SRC's Class Diagram__\n
+title __DOCUMENTS's Class Diagram__\n
 
   package  {
     class Author {
-        - firstName : String
-        - lastName : String
-        - id : int
-        - address : String
-        + Author()
-        + createWordDoc()
-        + createPdfDoc()
-        + createPictureDoc()
-        + createVideoDoc()
-        + getFirstName()
-        + getLastName()
-        + toString()
     }
   }
   
 
   package  {
     class AuthorsCollection {
-        # authorArrayList : ArrayList<Author>
     }
   }
   
 
   package  {
     class CanModify {
-        + CanModify()
     }
   }
   
 
   package  {
     abstract class Documents {
-        - description : String
-        - fileSize : double
-        - docName : String
-        + Documents()
-        + getDescription()
-        + getFileSize()
-        + getDocName()
-        + isFileSizeTooBig()
     }
   }
   
 
   package  {
     class FullRights {
-        + FullRights()
     }
   }
   
 
   package  {
     class MediaDoc {
-        - imageDimensionHeight : double
-        - imageDimensionWidth : double
-        + MediaDoc()
-        + druk()
     }
   }
   
 
   package  {
     class PdfDoc {
-        + PdfDoc()
     }
   }
   
 
   package  {
     class PictureDoc {
-        + PictureDoc()
     }
   }
   
 
   package  {
     class Program {
-        {static} + main()
     }
   }
   
 
   package  {
     class ReadOnly {
-        + ReadOnly()
     }
   }
   
 
   package  {
     interface TestInteface {
-        {abstract} + druk()
     }
   }
   
 
   package  {
     class TextDoc {
-        + TextDoc()
     }
   }
   
 
   package  {
     class VideoDoc {
-        - videoDuration : double
-        + VideoDoc()
     }
   }
   
 
   package  {
     class WordDoc {
-        + WordDoc()
-        + druk()
     }
   }
   
