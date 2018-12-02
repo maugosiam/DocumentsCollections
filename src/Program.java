@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 /*
 Imagine you're writing a Content Management system - this system will store four types of documents (and the Meta/Index information for them)
 
