@@ -9,7 +9,13 @@ title __DOCUMENTS's Class Diagram__\n
   
 
   package  {
-    class AuthorsCollection {
+    class AuthorsCollectionArrayList {
+    }
+  }
+  
+
+  package  {
+    class AuthorsCollectionTreeSet {
     }
   }
   

@@ -29,10 +29,10 @@ public class Program {
         ((WordDoc) documents[0]).druk();
 
         AuthorsCollectionTreeSet authorTS = new AuthorsCollectionTreeSet();
-        /*authorTS.authorTreeSet.add(new ReadOnly("Adam", "Badowski", 1, "ul.Sezamkowa 14, Warszawa"));
+        authorTS.authorTreeSet.add(new ReadOnly("Adam", "Badowski", 1, "ul.Sezamkowa 14, Warszawa"));
         authorTS.authorTreeSet.add(new CanModify("Cezary", "Duda", 2, "266 Broadway Str, New York"));
         authorTS.authorTreeSet.add(new FullRights("Edyta", "Fijałkiewicz", 3, "ul.Kraciasta 23/5, Słupsk"));
-       */ //System.out.println(authorTS.authorTreeSet);
+        //System.out.println(authorTS.authorTreeSet);
 
 
 
