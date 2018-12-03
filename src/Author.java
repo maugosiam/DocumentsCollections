@@ -5,6 +5,7 @@ public class Author {
     private int id;
     private String address;
 
+
     public Author(String firstNam, String lastName, int id, String address) {
         this.firstName = firstNam;
         this.lastName = lastName;
@@ -32,6 +33,10 @@ public class Author {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String toString() {

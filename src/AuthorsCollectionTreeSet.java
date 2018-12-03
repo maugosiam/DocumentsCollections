@@ -5,9 +5,9 @@ import java.util.TreeSet;
 
 public class AuthorsCollectionTreeSet {
 
-    Set<Author> authorTreeSet = new HashSet<>();
+    Set<Author> authorTreeSet = new TreeSet<>(new AuthorsComparator());
 
-//for some reason it doeasnt work. to clarify!
+//for some reason it doesnt work. to clarify!
 /*@Override
 public String toString() {
     return  "TreeSet";

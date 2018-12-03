@@ -1,13 +1,15 @@
 import java.util.ArrayList;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Program {
 
     public static void main (String[] args){
 
         AuthorsCollectionArrayList authors = new AuthorsCollectionArrayList();
-        authors.authorArrayList.add(new ReadOnly("Adam", "Badowski", 1, "ul.Sezamkowa 14, Warszawa"));
+        authors.authorArrayList.add(new ReadOnly("Adam", "Zbadowski", 10, "ul.Sezamkowa 14, Warszawa"));
         authors.authorArrayList.add(new CanModify("Cezary", "Duda", 2, "266 Broadway Str, New York"));
-        authors.authorArrayList.add(new FullRights("Edyta", "Fijałkiewicz", 3, "ul.Kraciasta 23/5, Słupsk"));
+        authors.authorArrayList.add(new FullRights("Edyta", "Fijałkiewicz", 5, "ul.Kraciasta 23/5, Słupsk"));
 
 
         for (int i = 0; i<authors.authorArrayList.size();i++) {
@@ -28,13 +30,25 @@ public class Program {
 
         ((WordDoc) documents[0]).druk();
 
-        AuthorsCollectionTreeSet authorTS = new AuthorsCollectionTreeSet();
-        authorTS.authorTreeSet.add(new ReadOnly("Adam", "Badowski", 1, "ul.Sezamkowa 14, Warszawa"));
-        authorTS.authorTreeSet.add(new CanModify("Cezary", "Duda", 2, "266 Broadway Str, New York"));
-        authorTS.authorTreeSet.add(new FullRights("Edyta", "Fijałkiewicz", 3, "ul.Kraciasta 23/5, Słupsk"));
+        //AuthorsCollectionTreeSet authorTS = new AuthorsCollectionTreeSet();
+        //authorTS.authorTreeSet.add(new ReadOnly("Adam", "Badowski", 1, "ul.Sezamkowa 14, Warszawa"));
+        //authorTS.authorTreeSet.add(new CanModify("Cezary", "Duda", 2, "266 Broadway Str, New York"));
+        //authorTS.authorTreeSet.add(new FullRights("Edyta", "Fijałkiewicz", 3, "ul.Kraciasta 23/5, Słupsk"));
         //System.out.println(authorTS.authorTreeSet);
 
 
+       /* for (int i = 0; i<authorTS.authorTreeSet.size();i++) {
+            System.out.println("ELEMENT"+i+": "+authorTS.authorTreeSet.);
+        }*/
+
+        Set<Author> authorTreeSet = new TreeSet<>(new AuthorsComparator());
+        authorTreeSet.add(new ReadOnly("Adam", "Badowski", 10, "ul.Sezamkowa 14, Warszawa"));
+        authorTreeSet.add(new CanModify("Cezary", "Duda", 2, "266 Broadway Str, New York"));
+        authorTreeSet.add(new FullRights("Edyta", "Fijałkiewicz", 5, "ul.Kraciasta 23/5, Słupsk"));
+
+
+
+        System.out.println(authorTreeSet);
 
     }
 }
